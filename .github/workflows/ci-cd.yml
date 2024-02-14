@@ -7,7 +7,6 @@ env:
   SSH_HOST: ${{ secrets.SERVER_IP }}
   SSH_USER: ${{ secrets.SERVER_USERNAME }}
   SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-  PORT: 3000:3000
 
 on:
   push:
@@ -47,3 +46,4 @@ jobs:
           username: "${{ env.SSH_USER }}"
           key: "${{ env.SSH_KEY }}"
           script: |
+            git pull https://github.com/xbakhromjon/ci-cd.git
