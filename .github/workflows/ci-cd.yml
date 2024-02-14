@@ -39,5 +39,5 @@ jobs:
           username: "${{ env.SSH_USER }}"
           key: "${{ env.SSH_KEY }}"
           script: |
-            cd test
+            cd test/ci-cd
             ls
