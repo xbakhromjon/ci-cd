@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	log.Println("CD worked")
+	log.Println("CD ")
 }
