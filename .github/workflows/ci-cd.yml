@@ -40,4 +40,4 @@ jobs:
           key: "${{ env.SSH_KEY }}"
           script: |
             cd test/ci-cd
-            ls
+            git pull https://github.com/xbakhromjon/ci-cd.git
