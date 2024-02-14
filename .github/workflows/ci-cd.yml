@@ -46,4 +46,4 @@ jobs:
           username: "${{ env.SSH_USER }}"
           key: "${{ env.SSH_KEY }}"
           script: |
-            echo "Hello"
+            ls
