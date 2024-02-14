@@ -35,9 +35,6 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - name: Executing remote SSH commands to deploy
         uses: appleboy/ssh-action@master
@@ -46,4 +43,5 @@ jobs:
           username: "${{ env.SSH_USER }}"
           key: "${{ env.SSH_KEY }}"
           script: |
-            ls
+            cd test
+            git pull https://github.com/xbakhromjon/ci-cd.git
