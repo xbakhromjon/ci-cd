@@ -41,3 +41,4 @@ jobs:
           script: |
             cd test/ci-cd
             git pull https://github.com/xbakhromjon/ci-cd.git
+
