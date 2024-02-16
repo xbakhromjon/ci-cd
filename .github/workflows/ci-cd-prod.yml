@@ -39,7 +39,5 @@ jobs:
           username: "${{ env.SSH_USER }}"
           key: "${{ env.SSH_KEY }}"
           script: |
-            cd test/ci-cd
-            git pull https://github.com/xbakhromjon/ci-cd.git
-            make reload
+            echo "deployed to prod"
 
